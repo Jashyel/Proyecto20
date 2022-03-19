@@ -1,0 +1,71 @@
+﻿<Page
+    x:Class="Proyecto20.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Proyecto20"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <SplitView  x:Name="splitView1" 
+                DisplayMode="CompactOverlay"  
+                IsPaneOpen="False" 
+                CompactPaneLength="50" 
+                OpenPaneLength="200">
+        <SplitView.Pane>
+            <StackPanel Background="LightGray">
+                <Button x:Name="botonMenu" 
+                        FontFamily="Segoe MDL2 Assets" 
+                        Content="&#xE700;"
+                        Width="50" 
+                        Height="50" 
+                        Background="Transparent"
+                        Click="botonMenu_Click"
+                        />
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="boton1" 
+                            FontFamily="Segoe MDL2 Assets" 
+                            Content="&#xE825;"
+                            Width="50" 
+                            Height="50" 
+                            Background="Transparent" 
+                            Click="boton1_Click"
+                            />
+                    <TextBlock Text="Descripción 1" 
+                               FontSize="18" 
+                               VerticalAlignment="Center" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="boton2" 
+                            FontFamily="Segoe MDL2 Assets" 
+                            Content="&#xE11A;"
+                            Width="50"
+                            Height="50" 
+                            Background="Transparent" 
+                            Click="boton2_Click"
+                            />
+                    <TextBlock Text="Descripción 2"
+                               FontSize="18"
+                               VerticalAlignment="Center"  />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="boton3" 
+                            FontFamily="Segoe MDL2 Assets"
+                            Content="&#xE115;"
+                            Width="50" 
+                            Height="50"
+                            Background="Transparent"
+                            Click="boton3_Click"
+                            />
+                    <TextBlock Text="Descripción 3"
+                               FontSize="18"
+                               VerticalAlignment="Center" />
+                </StackPanel>
+            </StackPanel>
+        </SplitView.Pane>
+        <SplitView.Content>
+            <Frame x:Name="frame1"/>
+        </SplitView.Content>
+    </SplitView>
+</Page>
